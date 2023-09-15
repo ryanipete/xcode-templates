@@ -1,34 +1,21 @@
-//
-//  ___FILENAME___
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//___COPYRIGHT___
-//
+//___FILEHEADER___
 
 @testable import ___VARIABLE_testedModule___
 import XCTest
 
-class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_testSubclass___ {
+final class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_testSubclass___ {
 
-    // MARK: Properties
+    var sut: ___VARIABLE_productName___!
 
-    var subject: ___VARIABLE_productName___!
-
-    // MARK: Setup and Teardown
-
-    override func setUp() {
-        super.setUp()
-        subject = ___VARIABLE_productName___()
-    }
-    
-    override func tearDown() {
-        super.tearDown()
+    override func setUpWithError() throws {
+        sut = ___VARIABLE_productName___()
     }
 
-    // MARK: Tests
+    override func tearDownWithError() throws {
+        sut = nil
+    }
 
-    func testThat_() {
+    func testThat_() throws {
 
         // given
 
@@ -36,7 +23,4 @@ class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_testSubclass___ {
 
         // then
     }
-
-    // MARK: Helpers
-
 }

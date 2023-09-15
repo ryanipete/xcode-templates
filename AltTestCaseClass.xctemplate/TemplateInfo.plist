@@ -22,11 +22,11 @@
 		<array>
 			<dict>
 				<key>Description</key>
-				<string>Name of the tested type</string>
+				<string>Name of the unit test class</string>
 				<key>Identifier</key>
 				<string>productName</string>
 				<key>Name</key>
-				<string>Tested Type:</string>
+				<string>Class:</string>
 				<key>NotPersisted</key>
 				<string>Yes</string>
 				<key>Required</key>
@@ -74,9 +74,9 @@
 				<key>MainTemplateFiles</key>
 				<dict>
 					<key>Objective-C</key>
-					<string>___FILEBASENAME___Tests.m</string>
+					<string>___FILEBASENAME___.m</string>
 					<key>Swift</key>
-					<string>___FILEBASENAME___Tests.swift</string>
+					<string>___FILEBASENAME___.swift</string>
 				</dict>
 				<key>Name</key>
 				<string>Language:</string>
@@ -89,20 +89,6 @@
 					<string>Swift</string>
 					<string>Objective-C</string>
 				</array>
-			</dict>
-			<dict>
-				<key>Description</key>
-				<string>Tested Module</string>
-				<key>Identifier</key>
-				<string>testedModule</string>
-				<key>Name</key>
-				<string>Tested Module:</string>
-				<key>Required</key>
-				<string>YES</string>
-				<key>Type</key>
-				<string>text</string>
-				<key>NotPersisted</key>
-				<false/>
 			</dict>
 		</array>
 	</dict>
